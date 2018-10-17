@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>Calcutta</title>
+</head>
+<body>
+    <nav>
+        <a id="home" href="{{url_for('all') }}">Home Page</a>
+        <a id="create" href="{{url_for('create') }}">Add a New Donation</a>
+        <a id="view" href="{{url_for('view') }}">View donor info</a>
+    </nav>
+	<h1>NCAA Tournament Calcutta</h1>
+	<h2>{% block subtitle %} {% endblock subtitle %}</h2>
+	{% block content %} {% endblock content %}
+</body>
+</html>
